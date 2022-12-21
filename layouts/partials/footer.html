@@ -14,8 +14,9 @@
             </ul>
         {{ end }}
         <div class="copyright">
-            <p>© {{ if isset .Site.Params "author"}}{{ .Site.Params.author }}, {{end}}{{ now.Year }}<br>
-            {{ i18n "powered" }} <a target="_blank" rel="noopener noreferrer" href="https://gohugo.io/">Hugo</a>, {{ i18n "theme" }} <a target="_blank" rel="noopener noreferrer" href="https://github.com/mitrichius/hugo-theme-anubis">Anubis</a>.<br>
+            <p>© Zero GmbH, {{ if isset .Site.Params "author"}}{{ .Site.Params.author }}, {{end}}{{ now.Year }} | <a href="https://zero-iee.com/">{{ i18n "imprint" }}</a><br>
+            {{ i18n "powered" }} <a target="_blank" rel="noopener noreferrer" href="https://gohugo.io/">Hugo</a>, Markdown and Git<br>
+            {{ i18n "theme" }} <a target="_blank" rel="noopener noreferrer" href="https://github.com/zero-iee/hugo-theme-anubis-zero">Anubis Zero</a> based on <a href="https://github.com/Mitrichius/hugo-theme-anubis">Mitrichius/hugo-theme-anubis</a>.<br>
             {{ partial "footer-extra.html" . }}
             </p>  
         </div> 

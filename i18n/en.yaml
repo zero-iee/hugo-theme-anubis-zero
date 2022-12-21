@@ -2,7 +2,7 @@ powered:
   other: "Powered by"
 
 theme:
-  other: "theme"
+  other: "Theme"
 
 readMore:
   other: "Read more"
@@ -45,3 +45,6 @@ lightTheme:
 
 readNext:
   other: "Read next"
+
+imprint:
+  other: "Imprint"
