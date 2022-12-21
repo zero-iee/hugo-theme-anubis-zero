@@ -28,6 +28,11 @@
     src: url('../fonts/SourceSansPro-Regular.ttf')  format('truetype');
 }
 
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url('../fonts/SourceCodePro-Regular.ttf')  format('truetype');
+}
+
 
 /* Basic */
 html {
@@ -157,21 +162,22 @@ pre {
     padding: 1em;
     max-width: 100%;
     overflow: auto;
+    color: var(--pre-color);
+    background-color: var(--pre-bg-color);
 }
 
 code,
 pre,
 kbd {
-    color: var(--pre-color);
-    background-color: var(--pre-bg-color);
-    font-family: monospace;
+    font-family: "Source Code Pro", monospace;
     font-size: 0.90em;
     line-height: 154%;
+    border-radius: 3px;
 }
 
 pre code, pre kbd {
     color: inherit;
-    background-color: inherit;
+    background-color: inherit; 
 }
 
 /* Styles */
