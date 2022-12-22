@@ -203,6 +203,7 @@ hr {
 /* Header */
 
 .common-header {
+    padding-top: 1.5em;
     padding-bottom: 1.5em;
     border-bottom: thin solid var(--hr-color);
 }
@@ -228,12 +229,14 @@ header h2 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: left;
     vertical-align: middle;
 }
 
 .site-title {
     white-space: nowrap;
+    margin: 0px !important; 
+    padding-left: 2em;
 }
 
 header nav:not(:empty){
@@ -247,6 +250,14 @@ header nav:not(:empty){
 header nav a {
     display: inline-block;
     margin: 0 2.5%;
+}
+
+header div.header-logo {
+    width: 4em;
+    height: 4em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: var(--logo);
 }
 
 /* Social icons */

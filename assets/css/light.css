@@ -29,4 +29,6 @@
 
     --svg-color: #333;
     --svg-state-color: #a31d1d;
+
+    --logo: url(/images/zero-logo-dark.png);
 }
