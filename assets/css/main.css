@@ -237,6 +237,7 @@ header h2 {
     white-space: nowrap;
     margin: 0px !important; 
     padding-left: 2em;
+    flex-grow: 1;
 }
 
 header nav:not(:empty){
