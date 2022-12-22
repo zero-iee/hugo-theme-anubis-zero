@@ -48,3 +48,9 @@ readNext:
 
 imprint:
   other: "Impressum"
+
+privacy:
+  other: "Datenschutz"
+
+based-on:
+  other: "basierend auf"
