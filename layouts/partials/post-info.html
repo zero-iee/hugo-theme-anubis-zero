@@ -4,7 +4,7 @@
 {{ end }}
 
 <div class="post-info">
-    {{ i18n "author-by" }} <a href="{{ .Site.BaseURL }}" class="p-name p-author" rel="me">{{ .Params.author | default .Site.Params.author }}</a>
+    {{ i18n "author-by" }} {{ .Params.author | default .Site.Params.author }}
 
     {{ if .Params.date }}
         <div class="post-date dt-published">{{ .Params.date.Format $dateFormat }}</div>
