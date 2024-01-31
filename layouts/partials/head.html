@@ -37,6 +37,11 @@
   </style>
 </noscript>
 
+<!-- Plausible Analytics script -->
+{{ if and (.Site.Params.plausibleAnalyticsEnabled) (not .Site.IsServer) }}
+{{- partial "plausible_analytics.html" . -}}
+{{ end }}
+
 {{ partial "resource.html" (dict "context" . "type" "css" "filename" "css/main.css") }}
 
 {{ if .Site.Params.copyCodeButton | default true }}
