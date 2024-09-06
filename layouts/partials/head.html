@@ -38,7 +38,7 @@
 </noscript>
 
 <!-- Plausible Analytics script -->
-{{ if and (.Site.Params.plausibleAnalyticsEnabled) (not .Site.IsServer) }}
+{{ if and (.Site.Params.plausibleAnalyticsEnabled) (not hugo.IsServer) }}
 {{- partial "plausible_analytics.html" . -}}
 {{ end }}
 
@@ -73,7 +73,7 @@
 <meta property="article:tag" content="">
 <meta property="article:publisher" content="https://www.facebook.com/XXX"> -->
 
-{{ if and (.Site.GoogleAnalytics) (hugo.IsProduction) }}
+{{ if and (.Site.Config.Services.GoogleAnalytics.ID) (hugo.IsProduction) }}
     {{ template "_internal/google_analytics.html" . }}
 {{ end }}
 
